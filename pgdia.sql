@@ -9,7 +9,7 @@
 --                      See http://tedia2sql.tigris.org/AUTHORS.html for tedia2sql author information
 -- 
 --   Target Database:   postgres
---   Generated at:      Fri Jan  9 21:11:03 2009
+--   Generated at:      Fri Jan  9 21:15:00 2009
 --   Input Files:       pgdia.dia
 -- 
 -- ================================================================================
