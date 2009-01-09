@@ -9,7 +9,7 @@
 --                      See http://tedia2sql.tigris.org/AUTHORS.html for tedia2sql author information
 -- 
 --   Target Database:   postgres
---   Generated at:      Sun Dec  7 16:21:28 2008
+--   Generated at:      Fri Jan  9 21:11:03 2009
 --   Input Files:       pgdia.dia
 -- 
 -- ================================================================================
@@ -89,6 +89,9 @@ create table posts_in_categories (
 
 
 
+-- Special statements for postgresql:post databases
+create index i_posts_tags on posts using gin(tags);
+
 
 -- Generated Permissions
 -- --------------------------------------------------------------------
@@ -98,6 +101,9 @@ create table posts_in_categories (
 -- Generated SQL Insert statements
 -- --------------------------------------------------------------------
 
+
+-- inserts for users (login, password, name, email)
+insert into users (login, password, name, email) values ( 'admin', 'blah', 'Admin', 'root@localhost' ) ;
 
 
 -- Generated SQL Constraints
